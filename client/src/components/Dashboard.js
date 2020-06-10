@@ -7,7 +7,7 @@ export default function Dashboard() {
 		<div>
 			<SurveyList />
 			<div className='fixed-action-btn direction-top'>
-				<Link to='/surveys/new' className='btn-floating btn-large red'>
+				<Link to='/surveys/new' className='btn-floating btn-large teal'>
 					<i className='material-icons'>add</i>
 				</Link>
 			</div>

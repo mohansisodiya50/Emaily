@@ -8,6 +8,12 @@ class SurveyList extends Component {
 		this.props.fetchSurveys();
 	}
 
+	renderNoSurveys() {
+		return (
+			<h3>No surveys! Please create one.</h3>
+		);
+	}
+
 	renderSurveys() {
 		return this.props.surveys.reverse().map(survey => {
 			return (
@@ -35,7 +41,7 @@ class SurveyList extends Component {
 	render() {
 		return (
 			<div>
-				{ this.renderSurveys() }
+				{ this.props.surveys ? this.renderSurveys() : this.renderNoSurveys() }
 			</div>
 		)
 	}

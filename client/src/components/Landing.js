@@ -4,9 +4,10 @@ const Landing = () => {
 	return (
 		<div style={{ textAlign: 'center' }}>
 			<h1>
-				Emaily!
+				Send Surveys
 	 		</h1>
-			Collect feedback from your users
+			<h5>Create online surveys and collect feedback from your users!</h5>
+			<a class="waves-effect waves-light btn" href='/auth/google'>Get Started</a>
 		</div>
 	)
 }

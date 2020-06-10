@@ -24,13 +24,14 @@ class Header extends Component {
 	render() {
 		return (
 			<div>
-				<nav>
+				<nav class="teal">
 					<div className="nav-wrapper">
 						<Link
+							style={{ margin: '0  1em' }}
 							to={this.props.auth ? '/surveys' : '/'}
 							className="left brand-logo"
 						>
-							Emaily
+							Survey
 						</Link>
 						<ul className="right">
 							{this.renderContent()}
