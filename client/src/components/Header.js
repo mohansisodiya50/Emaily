@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import Payments from './Payments';
 
 class Header extends Component {
+
 	renderContent() {
 		switch (this.props.auth) {
 			case null:
@@ -14,6 +15,11 @@ class Header extends Component {
 				)
 			default:
 				return [
+					<li key='0'>
+						<Link to='/surveys/new'>
+							<button className='btn light-blue accent-4'>Create New Survey</button>
+						</Link>
+					</li>,
 					<li key='1'><Payments /></li>,
 					<li key='2' style={{ margin: '0  1em' }}>Credits: {this.props.auth.credits}</li>,
 					<li key='3'><a href='/api/logout'>Logout</a></li>
